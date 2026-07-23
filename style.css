@@ -55,6 +55,17 @@ a { color: var(--bronze); }
 .hero h1 { font-size: 44px; font-weight: 500; line-height: 1.08; letter-spacing: -0.015em; }
 .role { font-size: 17px; font-style: italic; color: var(--bronze); margin-top: 14px; }
 .bio { font-size: 17px; line-height: 1.7; color: var(--body-text); margin-top: 22px; max-width: 560px; }
+.contact { margin-top: 20px; font-size: 17px; }
+.contact .label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-right: 12px;
+}
+.contact a { color: var(--bronze); text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.js-email { color: var(--bronze); }
+
 .profile-links { margin-top: 28px; }
 .profile-links a {
   font-family: 'Inter', sans-serif;
