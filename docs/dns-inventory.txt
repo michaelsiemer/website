@@ -1,0 +1,26 @@
+== NS ==
+ns3.wordpress.com.
+ns1.wordpress.com.
+ns2.wordpress.com.
+== A (apex) ==
+192.0.78.24
+192.0.78.25
+== WWW ==
+ghs.googlehosted.com.
+172.217.208.121
+== MX ==
+20 mailsec.protonmail.ch.
+10 mail.protonmail.ch.
+== TXT (apex: SPF + verification) ==
+"google-site-verification=uqAnz-dCUf7WliJlsCuWudL_heqgx8B0jqw4R7STsZQ"
+"v=spf1 include:_spf.protonmail.ch -all"
+"protonmail-verification=fbf9a3155bd1b69c362f3da80cbebfafa459e56d"
+"google-site-verification=MkwSlSPaP8hEBrD0IzcHpTN5d5CwzL8pEqIbX-6uprI"
+== DMARC ==
+"v=DMARC1; p=quarantine"
+== DKIM 1 ==
+protonmail.domainkey.d6kmw2yaysxyqwn7x7pmyw6dp2bq5ssoaupzs6udoxm36iuvju6sq.domains.proton.ch.
+== DKIM 2 ==
+protonmail2.domainkey.d6kmw2yaysxyqwn7x7pmyw6dp2bq5ssoaupzs6udoxm36iuvju6sq.domains.proton.ch.
+== DKIM 3 ==
+protonmail3.domainkey.d6kmw2yaysxyqwn7x7pmyw6dp2bq5ssoaupzs6udoxm36iuvju6sq.domains.proton.ch.
