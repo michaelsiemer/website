@@ -129,15 +129,13 @@ footer a { color: var(--muted); }
 details.abs summary {
   list-style: none;
   cursor: pointer;
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  flex-wrap: wrap;
+  display: block;
 }
 details.abs summary::-webkit-details-marker { display: none; }
-details.abs summary h3 { display: inline; }
 details.abs summary:hover h3 { color: var(--bronze); }
 .abs-hint {
+  display: inline-block;
+  margin-top: 7px;
   font-family: 'Inter', sans-serif;
   font-size: 10.5px; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase;
