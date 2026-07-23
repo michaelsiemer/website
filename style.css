@@ -51,7 +51,16 @@ a { color: var(--bronze); }
 .nav nav a.active { color: var(--ink); }
 
 /* ---------- Hero (homepage) ---------- */
-.hero { padding-top: 64px; padding-bottom: 40px; }
+.hero {
+  padding-top: 64px; padding-bottom: 40px;
+  display: flex; gap: 56px; align-items: flex-start;
+}
+.hero-text { flex: 1; min-width: 0; }
+.hero-photo { width: 180px; flex-shrink: 0; }
+.hero-photo img {
+  display: block; width: 100%; height: auto;
+  border-radius: 2px;
+}
 .hero h1 { font-size: 44px; font-weight: 500; line-height: 1.08; letter-spacing: -0.015em; }
 .role { font-size: 17px; font-style: italic; color: var(--bronze); margin-top: 14px; }
 .bio { font-size: 17px; line-height: 1.7; color: var(--body-text); margin-top: 22px; max-width: 560px; }
@@ -170,7 +179,12 @@ details.abs[open] .abs-hint::after { content: " ▴"; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 700px) {
-  .hero { padding-top: 40px; }
+  .hero {
+    padding-top: 40px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .hero-photo { width: 132px; }
   .hero h1 { font-size: 34px; }
   .nav-inner { flex-direction: column; align-items: flex-start; }
   .nav nav a { margin-left: 0; margin-right: 20px; }
