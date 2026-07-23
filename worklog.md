@@ -42,4 +42,22 @@
 - CV page: leads with View/Download buttons; inline PDF embed now desktop-only (hidden <760px) since mobile renders it blank.
 - Cloudflare Web Analytics: manual JS-snippet mode (token e61af9ff...), not automatic edge injection (site is DNS-only). Verified beacon fires: beacon.min.js 200 + /cdn-cgi/rum 204 on live site.
 - Mobile audit: responsive across all pages; the CV embed was the only weak spot, now fixed.
-- Open content items (unchanged): no abstracts for Bank Health / the two AI papers; CV footer still "Updated December 2025" and still lists the dropped Gourio firm-entry paper — defer to a proper CV refresh.
+
+## 2026-07-23 (CV refresh + AI positioning + Cloudflare review)
+- CV (both .tex variants in Dropbox/CV + site assets/cv.pdf): dated July 2026; added the two 2026 AI papers to Current Research (Forecasting the Past — with Fuentes-Albero & González-Astudillo; The Cost of Speed in AI Adoption); removed the Gourio "Aggregate Implication of Decline in Firm Entry" line (per user); fixed Uncertainty and International Capital Flows date 2018 → 2015 (matches site). Additions tipped it to a 1-line orphan page 5; reclaimed with \addtolength{\textheight}{0.5in} → back to 4 pages.
+- CAVEAT: CV footer page count is HARDCODED "of 4" — the `res` class disables aux files so lastpage can't auto-count. Any future edit that changes page count needs the "4" bumped by hand. CV .tex source lives in Dropbox/CV, NOT in this repo (not version-controlled here).
+- Homepage hero bio now names AI: "...and, in current work, what AI means for economic forecasting and adoption."
+- Cloudflare review — decisions:
+  - Do NOT proxy (stay DNS-only): GitHub Pages already gives HTTPS + CDN; proxying adds redirect-loop risk and duplicates it; analytics already works via manual beacon.
+  - DNSSEC currently OFF — enable AFTER registrar transfer completes (safe one-click once Cloudflare is both registrar + DNS; risky mid-transfer).
+  - Enable 2FA on Cloudflare + GitHub accounts (domain/DNS/mail routing all behind the CF login now).
+  - WAF/caching/bot rules are inert on DNS-only — leave them.
+- Open content items: no abstracts yet for Bank Health / the two AI papers (no public draft).
+
+## Post-transfer checklist (after ~2026-07-28, once whois shows Cloudflare)
+1. `whois michael-siemer.com` → confirm "Cloudflare, Inc." (load-bearing: WordPress auto-renew is OFF).
+2. Enable auto-renew + confirm registrar lock + WHOIS privacy in Cloudflare.
+3. Enable DNSSEC (DNS → Settings).
+4. Cancel WordPress.com plan (NOT before step 1).
+5. Unpublish old Google Site (sites.google.com/view/michael-siemer).
+6. Enable 2FA on Cloudflare + GitHub if not already.
