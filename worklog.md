@@ -34,3 +34,12 @@
   3. Cancel WordPress.com plan (NOT before step 1 confirms).
   4. Unpublish old Google Site (sites.google.com/view/michael-siemer) to avoid a stale duplicate in search results.
 - Open items: no abstracts yet for Bank Health and Local Economic Outcomes or the two new work-in-progress papers; no photo on homepage.
+
+## 2026-07-23 (SEO, discoverability, analytics)
+- Homepage: added About section (career, BTFP work + Board award, education, referee/seminar activity); tightened hero bio; restored portrait from full-res original (assets/originals/portrait-full.JPG). BTFP wording softened to avoid implying a formal title; matched in both CV .tex variants and site PDF.
+- Contact: obfuscated web@michael-siemer.com (email.js) in hero + footer.
+- SEO bundle: Open Graph + Twitter cards (branded 1200x630 assets/og-image.jpg), MS monogram favicon (SVG + PNG + apple-touch), JSON-LD Person schema, sitemap.xml, robots.txt, canonical links. All assets verified 200 on live domain.
+- CV page: leads with View/Download buttons; inline PDF embed now desktop-only (hidden <760px) since mobile renders it blank.
+- Cloudflare Web Analytics: manual JS-snippet mode (token e61af9ff...), not automatic edge injection (site is DNS-only). Verified beacon fires: beacon.min.js 200 + /cdn-cgi/rum 204 on live site.
+- Mobile audit: responsive across all pages; the CV embed was the only weak spot, now fixed.
+- Open content items (unchanged): no abstracts for Bank Health / the two AI papers; CV footer still "Updated December 2025" and still lists the dropped Gourio firm-entry paper — defer to a proper CV refresh.
