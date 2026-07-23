@@ -27,8 +27,9 @@
 - Transfer to Cloudflare Registrar submitted; registry shows `pendingTransfer` as of 11:23 UTC. Cost $10.46, adds one year (new expiry ~2027-09-09).
 - WordPress approval link was dead — harmless; ICANN auto-completes after ~5 days (~2026-07-28).
 - Files changed to date: index.html, working-papers.html, publications.html, cv.html, style.css, CNAME, assets/cv.pdf, docs/dns-inventory.txt, docs/superpowers/{specs,plans}/.
+- WordPress auto-renew turned OFF (2026-07-23) to avoid double-paying. RISK: registration expires 2026-09-09 with no fallback renewal. If the transfer fails, must re-enable WordPress renewal or retry the transfer before that date — a lapse takes down both the site and Proton email.
 - Next steps (after transfer completes ~07-28):
-  1. Verify registrar via `whois michael-siemer.com` → expect "Cloudflare, Inc."
+  1. Verify registrar via `whois michael-siemer.com` → expect "Cloudflare, Inc." (load-bearing now that auto-renew is off)
   2. Enable auto-renew in Cloudflare Domain Registration.
   3. Cancel WordPress.com plan (NOT before step 1 confirms).
   4. Unpublish old Google Site (sites.google.com/view/michael-siemer) to avoid a stale duplicate in search results.
