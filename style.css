@@ -125,6 +125,32 @@ footer a { color: var(--muted); }
 /* ---------- CV embed ---------- */
 .cv-frame { width: 100%; height: 75vh; border: 1px solid var(--rule); margin-top: 24px; background: #fff; }
 
+/* ---------- Expandable abstracts ---------- */
+details.abs summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+details.abs summary::-webkit-details-marker { display: none; }
+details.abs summary h3 { display: inline; }
+details.abs summary:hover h3 { color: var(--bronze); }
+.abs-hint {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--bronze); white-space: nowrap;
+}
+.abs-hint::after { content: " ▾"; }
+details.abs[open] .abs-hint::after { content: " ▴"; }
+.abstract p {
+  font-size: 15.5px; line-height: 1.65;
+  color: var(--body-text);
+  margin: 12px 0 4px; max-width: 640px;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 700px) {
   .hero { padding-top: 40px; }
