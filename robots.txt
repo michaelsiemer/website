@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michael-siemer.com/sitemap.xml

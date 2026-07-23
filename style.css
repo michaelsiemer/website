@@ -151,7 +151,26 @@ footer a { color: var(--muted); }
 .copyright { color: var(--muted); margin-top: 10px; }
 
 /* ---------- CV embed ---------- */
-.cv-frame { width: 100%; height: 75vh; border: 1px solid var(--rule); margin-top: 24px; background: #fff; }
+.cv-actions { margin-top: 20px; display: flex; align-items: center; gap: 20px; }
+.cv-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--paper); background: var(--ink);
+  text-decoration: none; padding: 11px 20px; border-radius: 6px;
+}
+.cv-button:hover { background: var(--bronze); }
+.cv-download {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--bronze); text-decoration: none;
+}
+.cv-download:hover { text-decoration: underline; }
+.cv-frame { width: 100%; height: 78vh; border: 1px solid var(--rule); margin-top: 24px; background: #fff; }
+/* Inline PDF preview is a desktop enhancement — mobile browsers render the
+   embed as a blank box, so the buttons above carry the CV there. */
+@media (max-width: 760px) { .cv-embed { display: none; } }
 
 /* ---------- Expandable abstracts ---------- */
 details.abs summary {
