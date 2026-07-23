@@ -15,3 +15,4 @@
 - Verified post-cutover: MX, SPF, DMARC, 3x DKIM all identical to pre-migration inventory.
 - CNAME file added; GitHub Pages cert approved, HTTPS enforced. All 4 pages + CV PDF return 200 on michael-siemer.com; www and http 301 to canonical https apex.
 - Next: user tests email round-trip, then Phase 3 registrar transfer to Cloudflare.
+- Email round-trip test passed both directions (2026-07-23). Phase 2 fully verified.
