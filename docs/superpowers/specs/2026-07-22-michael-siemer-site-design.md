@@ -87,3 +87,7 @@ Shared: one `style.css`, no JS required (nav is simple links). Responsive: singl
 
 - Blog, analytics, contact forms, CMS
 - Changing content (migrate as-is; content updates are a follow-up)
+
+## Addendum (2026-07-23): Expandable abstracts
+
+Paper titles toggle an inline abstract via native `<details>`/`<summary>` (no JS); external links live only in the link row beneath. Abstracts are verbatim from official sources — journal-published versions for publications (per user request), FEDS/RePEc/paper-PDF for working papers. Papers with no public abstract (Bank Health and Local Economic Outcomes; A Missing Generation of Firms?; Chicago Fed Letter) keep plain titles. Also fixed: the old site linked Firm Entry and Employment Dynamics to FEDS 2013-85 (a different paper); now points to FEDS 2014-56.
