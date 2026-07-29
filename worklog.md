@@ -74,7 +74,9 @@
 - Added llms.txt at site root — markdown summary (bio, section links, profile links, Fed disclaimer) for AI crawlers/answer engines per the llmstxt.org convention.
 - robots.txt: added explicit named-bot Allow rules (GPTBot, ChatGPT-User, Google-Extended, ClaudeBot, Claude-User, anthropic-ai, PerplexityBot, CCBot) alongside the existing wildcard — access unchanged, just unambiguous per-bot.
 - sitemap.xml: added <lastmod> per page, sourced from `git log -1 --date=short` per file (index.html 2026-07-24, others 2026-07-23).
-- Not done (deferred, out of scope for this pass): per-paper Highwire `citation_*` meta tags (would need standalone per-paper landing pages, not list pages).
+- Not done (deferred, out of scope for this pass): per-paper Highwire `citation_*` meta tags (would need standalone per-paper landing pages, not list pages). Low priority — canonical hosts (NBER/SSRN/FEDS/journal) are what Scholar actually indexes, not this site.
+- Deployed: committed in 3 commits (FSA link separately from SEO batch, plus worklog), pushed to origin/main, confirmed GitHub Pages built commit a3ab7be. Initial live check hit CDN edge-cache lag (old robots.txt served, llms.txt 404); raw.githubusercontent.com + Pages build-status API confirmed the correct content was actually deployed.
+- Honest impact assessment given to user: breadcrumbs + ScholarlyArticle data are real, verifiable (Google breadcrumb rendering; cleaner facts for AI tools that browse the site). llms.txt is a bet on an unconfirmed convention — no major LLM vendor has confirmed parsing it yet. Named-bot robots.txt entries are no functional change (wildcard already allowed everything). None of this affects Google ranking, which runs on backlinks/authority, not structured data.
 
 ## 2026-07-24 (FSA link)
 - index.html About: named the Financial Stability Assessment section and linked it → https://www.federalreserve.gov/econres/fspr-fsa-staff.htm (Fed "Meet the Researchers" — FSA section). Plain inline link, no target=_blank (matches site convention).
