@@ -61,3 +61,20 @@
 4. Cancel WordPress.com plan (NOT before step 1).
 5. Unpublish old Google Site (sites.google.com/view/michael-siemer).
 6. Enable 2FA on Cloudflare + GitHub if not already.
+
+## 2026-07-29 (post-transfer checklist)
+- Confirmed via `whois michael-siemer.com`: registrar = Cloudflare, Inc., status ACTIVE, expiry 2027-09-09. Transfer complete.
+- Step 2 done: auto-renew ON, WHOIS privacy ON in Cloudflare Domain Registration.
+- Step 3: DNSSEC enabled in Cloudflare (propagates within 24h).
+- Steps 4-6 done: WordPress.com plan cancelled, old Google Site unpublished, 2FA confirmed on Cloudflare + GitHub.
+- Post-transfer checklist fully closed out.
+
+## 2026-07-29 (SEO + LLM optimization)
+- Added ScholarlyArticle/CreativeWork JSON-LD for every paper on publications.html (5) and working-papers.html (8), plus BreadcrumbList JSON-LD on publications.html, working-papers.html, cv.html. All entries validated as parseable JSON; author names/dates/URLs copied verbatim from visible page text (no invented data).
+- Added llms.txt at site root — markdown summary (bio, section links, profile links, Fed disclaimer) for AI crawlers/answer engines per the llmstxt.org convention.
+- robots.txt: added explicit named-bot Allow rules (GPTBot, ChatGPT-User, Google-Extended, ClaudeBot, Claude-User, anthropic-ai, PerplexityBot, CCBot) alongside the existing wildcard — access unchanged, just unambiguous per-bot.
+- sitemap.xml: added <lastmod> per page, sourced from `git log -1 --date=short` per file (index.html 2026-07-24, others 2026-07-23).
+- Not done (deferred, out of scope for this pass): per-paper Highwire `citation_*` meta tags (would need standalone per-paper landing pages, not list pages).
+
+## 2026-07-24 (FSA link)
+- index.html About: named the Financial Stability Assessment section and linked it → https://www.federalreserve.gov/econres/fspr-fsa-staff.htm (Fed "Meet the Researchers" — FSA section). Plain inline link, no target=_blank (matches site convention).
