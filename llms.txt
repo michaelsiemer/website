@@ -1,0 +1,22 @@
+# Michael Siemer
+
+> Principal Economist at the Federal Reserve Board, Division of Financial Stability (Financial Stability Assessment section). Research on how banks and financial conditions shape firm dynamics, employment, and the real economy, and, in current work, what AI means for economic forecasting and adoption.
+
+Views expressed on this site are the author's own and do not necessarily represent the views of the Federal Reserve Board of Governors, the Federal Reserve System, or the Federal Open Market Committee.
+
+## About
+
+- [Home](https://michael-siemer.com/): bio, current affiliation, education, and recent-work summary
+- [CV](https://michael-siemer.com/cv.html): full curriculum vitae (PDF)
+
+## Research
+
+- [Working Papers](https://michael-siemer.com/working-papers.html): current and past working papers, with abstracts
+- [Publications](https://michael-siemer.com/publications.html): peer-reviewed journal articles, with abstracts
+
+## Profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=JgLyFUYAAAAJ)
+- [NBER author page](https://www.nber.org/authors_papers/msiemer)
+- [SSRN author page](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=686616)
+- [Federal Reserve Board profile](https://www.federalreserve.gov/econresdata/michael-siemer.htm)
