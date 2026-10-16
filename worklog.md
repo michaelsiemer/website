@@ -80,3 +80,8 @@
 
 ## 2026-07-24 (FSA link)
 - index.html About: named the Financial Stability Assessment section and linked it → https://www.federalreserve.gov/econres/fspr-fsa-staff.htm (Fed "Meet the Researchers" — FSA section). Plain inline link, no target=_blank (matches site convention).
+
+## 2026-10-16 (CV update)
+- Replaced assets/cv.pdf with the 2026-10-15 CV (`CV/michaelsiemer_cv_website.pdf`: 3 pages, no phone/e-mail). New: Fields line, Visiting Positions (UNSW, ECB, USC), 2026 presentations, AI papers under Current Research.
+- sitemap.xml: cv.html lastmod → 2026-10-16.
+- Site vs CV mismatches left for user to decide: Banking Turmoil/BTFP paper dated June 2024 on site vs 2026 on CV; "Zakrajsek" on site vs "Zakrajšek" on CV; About section doesn't mention the UNSW/ECB visits; JSON-LD knowsAbout lacks AI/forecasting and firm dynamics.
